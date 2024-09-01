@@ -27,7 +27,7 @@ export function Model(props) {
   // Rotate the model continuously
   useFrame(() => {
     if (groupRef.current) {
-      groupRef.current.rotation.y += 0.01; // Adjust the rotation speed as needed
+      groupRef.current.rotation.y += 0.01; // Adjust the rotation speed as needed or remove it
     }
   });
 

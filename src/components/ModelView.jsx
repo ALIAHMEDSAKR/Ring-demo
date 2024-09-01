@@ -11,7 +11,7 @@ const ModelView = () => {
             <Instances>
                 <Model />
             </Instances>
-            <OrbitControls />
+            <OrbitControls enableZoom={false} />
         </Canvas>    
     </div>
   )
