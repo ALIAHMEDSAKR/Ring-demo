@@ -14,6 +14,9 @@ const LandingPage = () => {
       scrollTrigger: { trigger: ".subtitle", scrub: true },
       opacity: 1, y: 0, duration: 1.5, stagger: 0.3 , ease: "power1.inOut"});
     gsap.fromTo(".ring-container", { opacity: 0, y: 100 }, { opacity: 1, y: 0, duration: 4,});
+    gsap.to(".ring-container",
+       { scrollTrigger: { trigger: ".ring-container", scrub: true , start: "top" , markers: true},
+        yPercent:400, xPercent: -250, duration: 4, smoothOrigin: true});
   }, []);
 
   return (
